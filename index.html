@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bayesian vs Frequentist</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+ <body>
+     <div class="container">
+     <h1>Bayesian vs Frequentist</h1>
+     <p>Answer honestly. There are no right or wrong answers.<br>
+        Read the questions carefully.</p>
+     <hr>
+     <p>1. You believed something strongly. You get new evidence contradicting your belief. Do you update your belief?</p>
+     <label class="option"> <input type="radio" name="q1" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q1" value="freq"> No, I wait for more data<br></label>
+
+     <p>2. You flip a coin 3 times and get HHH. Do you suspect the coin might be biased?</p>
+     <label class="option"> <input type="radio" name="q2" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q2" value="freq"> No, sample is too small<br></label>
+
+     <p>3. A disease is so rare that it affects only 1 in 1000 people. The test for this disease is 99% accurate. You test positive. How much do you believe are the chances that you have the disease?</p>
+     <label class="option"> <input type="radio" name="q3" value="freq"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q3" value="bayes"> No<br></label>
+
+     <p>4. You would meet atleast 20 people you know at this fest. Can you assign a probability to that event?</p>
+     <label class="option"> <input type="radio" name="q4" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q4" value="freq"> No, there is absolutely no data available!<br></label>
+     
+     <p>5. The canteen 'samosa' has been cold most of the times in the past. Today, someone says it's fresh. Do you still assume a high chance that it's cold?</p>
+     <label class="option"> <input type="radio" name="q5" value="freq"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q5" value="bayes"> No<br></label>
+
+     <p>6. You hear a rumour from one person. Does it affect your belief at all?</p>
+     <label class="option"> <input type="radio" name="q6" value="bayes"> Yes, slightly<br></label>
+     <label class="option"> <input type="radio" name="q6" value="freq"> No, ignore it<br></label>
+     
+     <p>7. You hear one dramatic failure story about a product. But thousands of people use it successfully. Does the story affect your belief? </p>
+     <label class="option"> <input type="radio" name="q7" value="bayes"> Yes, slightly<br></label>
+     <label class="option"> <input type="radio" name="q7" value="freq"> No<br></label>
+
+     <p>8. A player performs poorly in one match. Do you think their form is declining? </p>
+     <label class="option"> <input type="radio" name="q8" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q8" value="freq"> No<br></label>
+     
+     <p>9. You skip exercise for a week. Do you worry you are losing the habit?</p>
+     <label class="option"> <input type="radio" name="q9" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q9" value="freq"> No<br></label>
+
+     <p>10. You know you've had bad experiences in the past. Do you still let that influence your current decisions?</p>
+     <label class="option"> <input type="radio" name="q10" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q10" value="freq"> No<br></label>
+    
+     <p>11. Before the results of an examination, you feel you have done well. Does that affect what you believe the outcome will be?</p>
+     <label class="option"> <input type="radio" name="q11" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q11" value="freq"> No<br></label>
+
+     <p>12. You've had unusually GOOD luck in the past week. Do you expect it to continue?</p>
+     <label class="option"> <input type="radio" name="q12" value="bayes"> Yes, a little<br></label>
+     <label class="option"> <input type="radio" name="q12" value="freq"> No<br></label>
+    
+     <p>13. The famous "Monty Hall" problem. You are given three doors to choose from. Behind two of them is a goat, but behind one is a car. You choose a door. The host opens another door, revealing a goat. Do you switch doors or remain with the one you've chosen?</p>
+     <label class="option"> <input type="radio" name="q13" value="bayes"> I switch, it increases the chances<br></label>
+     <label class="option"> <input type="radio" name="q13" value="freq"> I do not switch, it doesn't matter<br></label>
+
+     <p>14. There is no data for tomorrow's weather, just experience and hunches. Can you still say, "there's a 30% chance of rain"?</p>
+     <label class="option"> <input type="radio" name="q14" value="bayes"> Yes<br></label>
+     <label class="option"> <input type="radio" name="q14" value="freq"> No<br></label>
+     
+     <p>15. You know most people enjoy a particular movie. One person you trust hates it. Does that matter a lot to you?</p>
+     <label class="option"> <input type="radio" name="q15" value="bayes"> Yes, a bit<br></label>
+     <label class="option"> <input type="radio" name="q15" value="freq"> No, not at all<br></label>
+
+     <br>
+     <button onclick="submitQuiz()">Submit</button>
+
+     <p id="result"></p>
+
+     <script src="script.js"></script>
+        </div>
+ </body>
+</html>
