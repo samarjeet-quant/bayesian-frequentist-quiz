@@ -4,7 +4,7 @@ function submitQuiz() {
 
   const answers = document.querySelectorAll('input[type="radio"]:checked');
 
-  const TOTAL_QUESTIONS = 3; // change later when you add more
+  const TOTAL_QUESTIONS = 15; // change later when you add more
 
   if (answers.length < TOTAL_QUESTIONS) {
     alert("Please answer all questions.");
